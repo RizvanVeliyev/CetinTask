@@ -54,4 +54,16 @@
     <LastName>string</LastName>
     <Age>0</Age>
   </Person>
+  <Person>
+    <Id>0</Id>
+    <Name>string</Name>
+    <LastName>string</LastName>
+    <Age>0</Age>
+  </Person>
+  <Person>
+    <Id>0</Id>
+    <Name>string</Name>
+    <LastName>string</LastName>
+    <Age>0</Age>
+  </Person>
 </ArrayOfPerson>

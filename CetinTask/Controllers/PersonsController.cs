@@ -19,14 +19,11 @@ namespace CetinTask.Controllers
 
         private readonly string xmlFilePath;
         private readonly IWebHostEnvironment _env;
-        //private readonly PersonService _personService;
+        private readonly PersonService _personService;
 
-        //public PersonsController(PersonService personService)
-        //{
-        //    _personService = personService;
-        //}
+       
 
-        public PersonsController(IWebHostEnvironment env)
+        public PersonsController(IWebHostEnvironment env, PersonService personService)
         {
             _env = env;
             xmlFilePath = Path.Combine(_env.WebRootPath, "persons.xml");
@@ -35,9 +32,12 @@ namespace CetinTask.Controllers
             {
                 Directory.CreateDirectory(_env.WebRootPath);
             }
+            _personService = personService;
 
             LoadFromXml();
+            
         }
+        
         private void SaveToXml()
         {
             var serializer = new XmlSerializer(typeof(List<Person>));
@@ -85,7 +85,7 @@ namespace CetinTask.Controllers
         {
             Persons.Add(person);
             SaveToXml();
-            //_personService.SaveToJson();
+            _personService.SaveToJson();
             return Created();
         }
 
@@ -102,7 +102,7 @@ namespace CetinTask.Controllers
             person.LastName = updatedPerson.LastName;
             person.Age = updatedPerson.Age;
             SaveToXml();
-            //_personService.SaveToJson();
+            _personService.SaveToJson();
 
             return NoContent();
         }
@@ -118,7 +118,7 @@ namespace CetinTask.Controllers
 
             Persons.Remove(person);
             SaveToXml();
-            //_personService.SaveToJson();
+            _personService.SaveToJson();
             return NoContent();
         }
     }
