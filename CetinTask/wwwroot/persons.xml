@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPerson xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Person>
+    <Id>1</Id>
+    <Name>John Doe</Name>
+    <LastName>Software Engineer</LastName>
+    <Age>30</Age>
+  </Person>
+  <Person>
+    <Id>2</Id>
+    <Name>Jane Smith</Name>
+    <LastName>Data Scientist</LastName>
+    <Age>27</Age>
+  </Person>
+  <Person>
+    <Id>0</Id>
+    <Name>Musaaa</Name>
+    <LastName>Musaa</LastName>
+    <Age>33</Age>
+  </Person>
+  <Person>
+    <Id>0</Id>
+    <Name>string</Name>
+    <LastName>string</LastName>
+    <Age>0</Age>
+  </Person>
+  <Person>
+    <Id>0</Id>
+    <Name>string</Name>
+    <LastName>string</LastName>
+    <Age>0</Age>
+  </Person>
+  <Person>
+    <Id>0</Id>
+    <Name>string</Name>
+    <LastName>string</LastName>
+    <Age>0</Age>
+  </Person>
+  <Person>
+    <Id>0</Id>
+    <Name>string</Name>
+    <LastName>string</LastName>
+    <Age>0</Age>
+  </Person>
+  <Person>
+    <Id>0</Id>
+    <Name>string</Name>
+    <LastName>string</LastName>
+    <Age>0</Age>
+  </Person>
+  <Person>
+    <Id>0</Id>
+    <Name>string</Name>
+    <LastName>string</LastName>
+    <Age>0</Age>
+  </Person>
+</ArrayOfPerson>
